@@ -12,6 +12,7 @@ public class MarkTaskAsCompleted {
         int taskId = InputUtil.getIntegerInput("Enter the Task ID to mark as Completed: ");
         crud.Tasks task = new Tasks();
         task.markTaskCompleted(taskId);
+        ViewAllTasks.displayAllTasks();
 
     }
 
